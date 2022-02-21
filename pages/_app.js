@@ -1,7 +1,19 @@
-import '../styles/globals.css'
+import config from "../src/config";
+import { CommonContextProvider } from "../src/context/commonContext";
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps, contextProps }) {
+  return (
+    <CommonContextProvider initialState={contextProps}>
+      <Component {...pageProps} />
+    </CommonContextProvider>
+  );
 }
 
-export default MyApp
+MyApp.getInitialProps = async (context) => {
+  const { languages = [] } = config;
+
+  return { contextProps: { languages } };
+};
+
+export default MyApp;
