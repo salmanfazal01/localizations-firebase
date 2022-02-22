@@ -1,0 +1,18 @@
+[debug] [2022-02-22T19:43:21.855Z] ----------------------------------------------------------------------
+[debug] [2022-02-22T19:43:21.857Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2022-02-22T19:43:21.857Z] CLI Version:   10.2.1
+[debug] [2022-02-22T19:43:21.857Z] Platform:      win32
+[debug] [2022-02-22T19:43:21.857Z] Node Version:  v14.17.5
+[debug] [2022-02-22T19:43:21.858Z] Time:          Tue Feb 22 2022 14:43:21 GMT-0500 (Eastern Standard Time)
+[debug] [2022-02-22T19:43:21.858Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-22T19:43:21.905Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-22T19:43:21.905Z] > authorizing via signed-in user (salmanfazal01@gmail.com)
+[debug] [2022-02-22T19:43:21.905Z] [iam] checking project maker-localizations for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-02-22T19:43:21.906Z] > refreshing access token with scopes: []
+[debug] [2022-02-22T19:43:21.906Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-22T19:43:22.286Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 22 Feb 2022 19:43:22 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-22T19:43:22.303Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maker-localizations:testIamPermissions [none]
+[debug] [2022-02-22T19:43:22.303Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maker-localizations:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-02-22T19:43:22.806Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maker-localizations:testIamPermissions 200
