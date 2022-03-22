@@ -85,6 +85,14 @@ export default functions.auth.user().onCreate(async (userRecord) => {
   });
   // ---------- Set analytics ----------
 
+  // ---------- User Profile ----------
+  const userRef = await db.doc(`users/${uid}`).set({
+    uid,
+    email,
+    isAdmin: false,
+  });
+  // ---------- Contact Profile ----------
+
   // ---------- Contact Profile ----------
   const firstName = displayName.substr(0, displayName.indexOf(" "));
   const lastName = displayName.substr(displayName.indexOf(" ") + 1);

@@ -23,7 +23,9 @@ const TranslateButton = ({ params }) => {
     );
     const results = Object.assign({}, ..._results);
 
-    await updateLocaleFields(data.id, word, results);
+    console.log(results);
+
+    // await updateLocaleFields(data.id, word, results);
   };
 
   return (

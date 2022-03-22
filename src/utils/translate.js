@@ -14,6 +14,7 @@ export const translateText = async (text = "text", from = "en", to = "es") => {
           source: from,
           target: to,
           key: API,
+          format: "text",
         },
       }
     );

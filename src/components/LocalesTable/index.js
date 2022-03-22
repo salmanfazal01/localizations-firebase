@@ -90,7 +90,7 @@ const LocalesTable = () => {
       <DataGrid
         rows={rows || []}
         columns={columns || []}
-        pageSize={20}
+        pageSize={100}
         // rowsPerPageOptions={[5]}
         disableSelectionOnClick
         onCellEditCommit={(e) => {
